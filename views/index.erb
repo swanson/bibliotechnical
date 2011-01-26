@@ -1,14 +1,38 @@
 <html>
     <head>
-        <title>alexandria</title>
-        <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen">
-
+        <title>bibliotechnical</title>
+        <script type="text/javascript" src="javascripts/jquery-1.4.4.min.js"></script>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+        <script type="text/javascript">
+            $(document).ready(function(){
+              $(".sign_up").click(function(e){
+                e.preventDefault();
+                $.ajax({
+                  type: 'post',
+                  url: '/subscribe',
+                  data: $('#subscribe').serialize(),
+                  datatype: 'json',
+                  success: function(){
+                    $('.entry').val('');
+                    $('.box').append("Thanks!");
+                  },
+                });
+              });
+            });
+        </script>
     </head>
     <body>
-        <h1>bibliotechnical</h1>
-        <form novalidate method="POST" action="/subscribe">
-            <input type="email" name="contact" placeholder="enter your email">
-            <input type="submit" value="subscribe">
-        </form>
+        <center>
+            <h1>bibliotechnical</h1>
+            <div class="box">
+                <h2>Find the perfect technical book.</h2>
+                <h3>Enter your email or Twitter and we'll tell you when it's ready.</h3>
+
+            <form id="subscribe" novalidate method="POST" action="/subscribe">
+                <input class="entry" type="email" name="contact" />
+                <button class="sign_up">Sign up</button>
+            </form>
+            </div>
+        </center>
     </body>
 </html>

@@ -28,5 +28,5 @@ post '/subscribe' do
   }
    
   $collection.insert(doc)
-  #doc.to_json
+  {"success" => true}.to_json
 end
