@@ -27,18 +27,6 @@ h3 {
 
 body {
   background-color: #2B2F3D;
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.09, rgb(53,57,71)),
-    color-stop(0.78, rgb(27,28,37))
-);
-background-image: -moz-linear-gradient(
-    center bottom,
-    rgb(53,57,71) 9%,
-    rgb(27,28,37) 78%
-);
   color: white;
   font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
