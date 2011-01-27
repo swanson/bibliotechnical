@@ -17,9 +17,10 @@ get '/' do
 end
 
 post '/subscribe' do
+  content_type :json
   contact = params[:contact]
   contact_type = contact.start_with?("@") ||
-                 !contact.include?("@") ? "twitter" : "email"
+                 !contact.include?("@") ? "Twitter" : "email"
 
   doc = {
     "contact" => contact,
@@ -28,5 +29,5 @@ post '/subscribe' do
   }
    
   $collection.insert(doc)
-  {"success" => true}.to_json
+  {"success" => true, "type" => contact_type}.to_json
 end

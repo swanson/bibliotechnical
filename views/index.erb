@@ -2,19 +2,38 @@
     <head>
         <title>bibliotechnical</title>
         <script type="text/javascript" src="javascripts/jquery-1.4.4.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
         <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
         <script type="text/javascript">
             $(document).ready(function(){
               $(".sign_up").click(function(e){
+                var that = $(this);
                 e.preventDefault();
+                if ( $('.entry').val().length < 1 ){
+                  $('#form_div').effect('shake', { times: 4, distance: 3}, 40);
+                  return;
+                }
                 $.ajax({
                   type: 'post',
                   url: '/subscribe',
                   data: $('#subscribe').serialize(),
                   datatype: 'json',
-                  success: function(){
+                  success: function(data){
                     $('.entry').val('');
-                    $('.box').append("Thanks!");
+                    $("<div class='thanks'>Thanks! We'll update you through " + 
+                      data.type + ".</div>")
+                      .hide()
+                      .appendTo('#container')
+                      .slideDown('fast');
+
+                    $('.sign_up').attr('disabled', true);
+                    that.unbind();
+                  },
+                  error: function(data){
+                    $("<div class='yikes'>Yikes! Something messed up, try again.</div>")
+                      .hide()
+                      .appendTo('#container')
+                      .slideDown('fast');
                   },
                 });
               });
@@ -22,16 +41,17 @@
         </script>
     </head>
     <body>
-        <center>
+        <center id="container">
             <h1>bibliotechnical</h1>
             <div class="box">
                 <h2>Find the perfect technical book.</h2>
                 <h3>Enter your email or Twitter and we'll tell you when it's ready.</h3>
-
-            <form id="subscribe" novalidate method="POST" action="/subscribe">
+            <div id="form_div">
+            <form id="subscribe" novalidate>
                 <input class="entry" type="email" name="contact" />
                 <button class="sign_up">Sign up</button>
             </form>
+            </div>
             </div>
         </center>
     </body>
