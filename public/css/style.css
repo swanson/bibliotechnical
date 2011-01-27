@@ -1,9 +1,13 @@
 @font-face { font-family: paola; src: url('paola.ttf'); }
 
+#container {
+  margin-top: 200px;
+}
+
 h1 { 
   font-family: paola, sans-serif;
-  font-size: 60px;
-  margin-bottom: 10px;
+  font-size: 65px;
+  margin-bottom: 5px;
   margin-top: 10px;
 }
 
@@ -22,7 +26,7 @@ h3 {
 }
 
 body {
-  background-color: #2B2F3D;
+  background: #2B2F3D url('/images/bg_slice.png') repeat-x;
   color: white;
   font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
@@ -30,7 +34,7 @@ body {
 .box {
   width: 480px;
   background-color: black;
-  margin: 20px auto 0px;
+  margin: 5px auto 0px;
   padding: 15px;
   height: 140px;
   border-radius: 10px;
