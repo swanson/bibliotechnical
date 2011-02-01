@@ -1,2 +1,5 @@
-require 'hello'
-run Sinatra::Application
+require 'bibliotechnical'
+
+use Rack::Static, :urls => ["/blog"]
+
+run Bibliotechnical
