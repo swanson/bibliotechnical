@@ -51,7 +51,7 @@ body {
   font-size: 13px;
 }
 
-.sign_up {
+#sign_up {
   background: -moz-linear-gradient(0% 100% 90deg,#63A62F, #7FBF4D);
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7FBF4D), to(#63A62F));
   border-bottom-color: #5B992B;
@@ -84,7 +84,7 @@ body {
   width: 75px;
 }
 
-.sign_up:hover {
+#sign_up:hover {
   background: -moz-linear-gradient(0% 100% 90deg,#5e9e2e, #76b347);
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#76b347), to(#5e9e2e));
   -moz-box-shadow: inset 0 1px 0 0 #8dbf67;

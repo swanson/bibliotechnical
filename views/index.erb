@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
         <script type="text/javascript">
             $(document).ready(function(){
-              $(".sign_up").click(function(e){
+              $("#sign_up").click(function(e){
                 var that = $(this);
                 e.preventDefault();
 
@@ -63,7 +63,7 @@
             <div id="form_div">
             <form id="subscribe" novalidate>
                 <input class="entry" type="email" name="contact" />
-                <button class="sign_up">Sign up</button>
+                <button id="sign_up">Sign up</button>
             </form>
             </div>
             </div>
