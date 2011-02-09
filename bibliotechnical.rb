@@ -20,6 +20,10 @@ class Bibliotechnical < Sinatra::Base
     erb :index
   end
 
+  get '/browse' do
+    erb :browse
+  end
+
   post '/subscribe' do
     content_type :json
     contact = params[:contact]
