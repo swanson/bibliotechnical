@@ -6,26 +6,32 @@
 <body>
     <div id="container">
         <div id="header">
-            <div id="logo">logo</div>
-            <div id="navigation">nav</div>
+            <div id="logo"><a href="/">bibliotechnical</a></div>
+            <div id="navigation">
+                <div class="nav-item">search</div>
+                <div class="nav-item">browse</div>
+                <div class="nav-item">lists</div>
+            </div>
         </div>
         <div id="main">
-            <div id="breadcrumb">breadcrumb</div>
+            <div id="breadcrumb"></div>
             <div id="book-header">
                 <div id="book-cover">
                     <img src="img/learning-python-cover.jpg"/>
-                    <a>buy</a>
+                    <button id="buy">Order a copy</button>
                 </div>
                 <div id="book-summary">
                     <div id="book-title">
                         <h1>Learning Python</h1>
                         <span>Mark Lutz - O'Reilly - Fourth Edition (2009)</span>
+                        <hr />
                     </div>
                     <div id="book-abstract">
                         Designed to be an in-depth introduction to the core Python language, 
                         <i>Programming Python</i> has the feel of a self-paced class on Python
-                        fundamentals. With material for both Python 2.X and 3.X, this book is 
+                        fundamentals.<br/><br/> With material for both Python 2.X and 3.X, this book is 
                         a perfect introduction to the language.
+                        <hr />
                     </div>
                     <div id="book-extras">
                         <div id="book-sources">
@@ -40,18 +46,39 @@
                         </div>
                     </div>
                 </div>
-                <div id="book-scores">scores</div>
+                <div id="book-scores">score sliders go here...</div>
             </div>
+ 
             <div id="book-content">
+                <hr />
                 <div id="book-quotes">
-                    <h2>what people are saying</h2>
+                    <h2 class="centered-header">what people are saying</h2>
+                    <div class="topic"><h3><a href="http://news.ycombinator.com/item?id=121779">Ask YC: What is the best Python book for a beginner?</a></h3></div>
+                            <div>Learning Python is an excellent book. It is what I found most useful for learning the language. I bought and read many books, and this one is the best I found.</div>
+                            <div class="user"><a href="http://news.ycombinator.com/item?id=121994">mathogre</a></div>
+                            <div>I started learning Python from a Mark Lutz seminar actually. He is a great teacher.</div>
+                            <div class="user"><a href="http://news.ycombinator.com/item?id=121827">ivankirigin</a></div>
+                            <div>If you really want a beginner book, Learning Python is a great choice.
+</div>
+                            <div class="user"><a href="http://news.ycombinator.com/item?id=121881">fireandfury</a></div>
+                            <div class="topic"><h3><a href="http://www.reddit.com/r/Python/comments/fdmzz/looking_for_a_good_book_on_learning_python/">Looking for a good book on learning Python. Any recommendations?</a></h3></div>
+                            <div>Lutz's book is very good, it would be my first pick.</div>
+                            <div class="user"><a href="http://www.reddit.com/r/Python/comments/fdmzz/looking_for_a_good_book_on_learning_python/c1f8h5y">EverybodyScram</a></div>
+                            </li>
+                            <div>I agree that [Learning Python] is a good book. It was my first Python book, too. But as others have already said, it has a lot of text and chapters. That doesn't seem to be a bad thing, especially for a beginner book. If you don't mind reading a lot of text and getting things presented step by step, go for it.</div>
+                            <div class="user"><a href="http://www.reddit.com/r/Python/comments/fdmzz/looking_for_a_good_book_on_learning_python/c1fbu8s">Knack_123</a></div>
+                            <div class="topic"><h3><a href="http://stackoverflow.com/questions/457757/what-is-the-best-python-book-for-experienced-programmers">What is the best Python book for experienced programmers?</a></h3></div>
+                            <div>Unexpectedly, I found myself more frequently using Learning Python, even though it seems much more like it's "aimed at the novice programmer"; something I was not, really. I just noticed I found the basic syntax stuff and examples I needed faster in that book.</div>
+                            <div class="user"><a href="http://stackoverflow.com/questions/457757/what-is-the-best-python-book-for-experienced-programmers/459714#459714">Jonik</a></div>
+
+
                 </div>
                 <div id="book-preview">
-                    <h2>take a look inside</h2>
+                    <h2 class="centered-header">take a look inside</h2>
                     <div id="embedded-preview">
 <script type="text/javascript" src="http://books.google.com/books/previewlib.js"></script>
 <script type="text/javascript">
-GBS_insertEmbeddedViewer('ISBN:0596158068',380,480);
+GBS_insertEmbeddedViewer('ISBN:0596158068',450,550);
 </script>
                     </div>
                 </div>
