@@ -158,6 +158,18 @@ hr {
   font-size: 12px;
 }
 
+#ipad-icon {
+  margin-top:10px;
+  background-image: url("../img/ipad-icon.png");
+  display:block;
+  width:51px;
+  height:65px;
+}
+
+#ipad-icon:hover {
+  background-image: url("../img/ipad-hover.png");
+}
+
 #book-tags {
   float:right;
   font-size: 12px;
