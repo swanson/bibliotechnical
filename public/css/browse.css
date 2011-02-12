@@ -164,10 +164,17 @@ hr {
   display:block;
   width:51px;
   height:65px;
+  float:left;
 }
 
-#ipad-icon:hover {
-  background-image: url("../img/ipad-hover.png");
+#kindle-icon {
+  margin-top:10px;
+  background-image: url("../img/kindle-icon.png");
+  display:block;
+  width:44px;
+  height:65px;
+  float:left;
+  margin-left:10px;
 }
 
 #book-tags {
