@@ -178,8 +178,7 @@ hr {
 }
 
 #book-quotes {
-  width: 370px;
-  padding-left:20px;
+  width: 920px;
   font-size: 14px;
 }
 
@@ -189,12 +188,15 @@ hr {
 }
 
 #book-quotes div {
-  padding-left:10px;
   padding-top:10px;
 }
 
 .topic {
-  margin-left:-10px;
+  width:400px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align:justify;
+  line-height:1.1;
 }
 
 .user a {
@@ -214,7 +216,6 @@ hr {
 #book-quotes h3 a {
   font-size: 14px;
   font-weight: bold;
-  font-style: italic;
 }
 
 #book-quotes h3 {
@@ -222,14 +223,11 @@ hr {
 }
 
 #book-preview {
-  width: 480px;
-  padding-left:30px;
-  padding-right:20px;
 }
 
 #embedded-preview {
-  padding-top: 20px;
-  padding-left:30px;
+  width:700px;
+  margin: 0 110;
 }
 
 #footer {
