@@ -150,6 +150,7 @@ hr {
   font-size: 14px;
   line-height: 1.1;
   padding-bottom: 5px;
+  text-align:justify;
 }
 
 #book-sources {
