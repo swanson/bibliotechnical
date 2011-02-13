@@ -199,16 +199,39 @@ hr {
 
 #book-scores {
   width:270px;
-  padding:20px;
+  padding:60px 20px 20px 20px;
   height:310px;
 }
 
 .slider {
-    margin-bottom:40px;
+  margin-bottom:10px;
 }
 
 .slider .ui-slider-range { 
-    background: #2b2f3d; 
+  background: #2b2f3d; 
+}
+
+.slider .ui-slider-handle {
+  width:10px;
+}
+
+.slider-labels {
+  font-size:11px;
+  padding-bottom:20px;
+}
+.left-label {
+  width:33%;
+}
+
+.center-label {
+  width:33%;
+  text-align:center;
+}
+
+.right-label {
+    width:33%;
+    float:right;
+    text-align:right;
 }
 
 #book-content {

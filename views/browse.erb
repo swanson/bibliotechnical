@@ -1,16 +1,35 @@
 <html>
 <head>
     <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="css/browse.css" type="text/css" media="screen">
     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/smoothness/jquery-ui.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/browse.css" type="text/css" media="screen">
     <script type="text/javascript" src="javascripts/jquery-1.4.4.min.js"></script>
     <script type="text/javascript" src="javascripts/jquery-ui-1.8.9.custom.min.js"></script>
     <script type="text/javascript">
         $(function(){
-            $('.slider').slider({
+            $('#skill-slider').slider({
 			    range: "min",
-			    max: 255,
-			    value: 127,
+                max: 100,
+                value: 20,
+                disabled: true,
+                });
+            $('#approach-slider').slider({
+			    range: "min",
+			    max: 100,
+                value: 85,
+                disabled: true,
+            });
+            $('#shelf-life-slider').slider({
+			    range: "min",
+			    max: 100,
+                value: 50,
+                disabled: true,
+            });
+            $('#style-slider').slider({
+			    range: "min",
+			    max: 100,
+                value: 30,
+                disabled: true,
             });
         });
     </script>
@@ -63,9 +82,29 @@
                 </div>
                 <div id="book-scores">
                     <div class="slider" id="skill-slider"></div>
-                    <div class="slider" id="foo-slider"></div>
-                    <div class="slider" id="foo2-slider"></div>
-                    <div class="slider" id="foo3-slider"></div>
+                    <div class="slider-labels">
+                        <div class="left-label">Beginner</div>
+                        <div class="center-label">Intermediate</div>
+                        <div class="right-label">Expert</div>
+                    </div>
+                    <div class="slider" id="approach-slider"></div>
+                    <div class="slider-labels">
+                        <div class="left-label">Theoretical</div>
+                        <div class="right-label">Practical</div>
+                    </div>
+                    <div class="slider" id="shelf-life-slider"></div>
+                    <div class="slider-labels">
+                        <div class="left-label">Classic</div>
+                        <div class="center-label">Established</div>
+                        <div class="right-label">New Release</div>
+                    </div>
+                    <div class="slider" id="style-slider"></div>
+                    <div class="slider-labels">
+                        <div class="left-label">Reference</div>
+                        <div class="center-label">Examples</div>
+                        <div class="right-label">Articles</div>
+                    </div>
+
                 </div>
             </div>
  
