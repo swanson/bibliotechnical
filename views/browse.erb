@@ -2,6 +2,19 @@
 <head>
     <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
     <link rel="stylesheet" href="css/browse.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/smoothness/jquery-ui.css" type="text/css" media="screen">
+    <script type="text/javascript" src="javascripts/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery-ui-1.8.9.custom.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('.slider').slider({
+			    range: "min",
+			    max: 255,
+			    value: 127,
+            });
+        });
+    </script>
+
 </head>
 <body>
     <div id="container">
@@ -38,16 +51,22 @@
                             Also available on:
                             <br />
                             <a id="ipad-icon" href="#" title="iPad"></a>
-                            <a id="kindle-icon" href="#" title="iPad"></a>
+                            <a id="kindle-icon" href="#" title="Kindle"></a>
                         </div>
                         <div id="book-tags">
                             Tagged:
                             <br />
-                            python, learning
+                            <div class="tag">python</div>
+                            <div class="tag">learning</div>
                         </div>
                     </div>
                 </div>
-                <div id="book-scores">score sliders go here...</div>
+                <div id="book-scores">
+                    <div class="slider" id="skill-slider"></div>
+                    <div class="slider" id="foo-slider"></div>
+                    <div class="slider" id="foo2-slider"></div>
+                    <div class="slider" id="foo3-slider"></div>
+                </div>
             </div>
  
             <div id="book-content">

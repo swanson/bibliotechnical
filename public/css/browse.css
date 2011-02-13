@@ -183,10 +183,32 @@ hr {
   width:40%;
 }
 
+.tag {
+  clear:both;
+  background-color: #353535;
+  color:white;
+  font-weight:bold;
+  border-radius:6px;
+  -moz-border-radius:6px;
+  width:auto;
+  padding:5px 10px;
+  margin-top:5px;
+  font-family:arial;
+  font-size:14px;
+}
+
 #book-scores {
   width:270px;
   padding:20px;
   height:310px;
+}
+
+.slider {
+    margin-bottom:40px;
+}
+
+.slider .ui-slider-range { 
+    background: #2b2f3d; 
 }
 
 #book-content {
