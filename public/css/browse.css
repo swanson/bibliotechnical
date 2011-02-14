@@ -2,7 +2,9 @@
 
 body {
   background-color:#2b2f3d;
+  font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
 }
+
 div {
   float:left;
   width:100%;
@@ -10,6 +12,14 @@ div {
 
 i {
   font-style:italic;
+}
+
+a {
+  color:#2b2f3d;
+}
+
+a:visited {
+  color:#707895;
 }
 
 hr {
@@ -44,6 +54,8 @@ hr {
 .nav-item {
   width:auto;
   margin-left:50px;
+  padding-left:10px;
+  padding-right:10px;
   color: white;
   text-align:right;
   margin-top:10px;
@@ -240,7 +252,6 @@ hr {
   text-align:center;
   font-size:13px;
   padding-bottom:5px;
-  font-style:italic;
 }
 .slider-labels {
   font-size:12px;
@@ -294,20 +305,21 @@ hr {
 .user a {
   font-size: 13px;
   font-style: italic;
-  color:#d9d9d9;
+  color:#7e7f81;
   float:right;
   margin-top:-5px;
 }
 
 #book-quotes h2, #book-preview h2 {
-  color:#d9d9d9;
-  font-size:24px;
+  color:#2b2f3d;
+  font-size:22px;
   font-style:italic;
 }
 
 #book-quotes h3 a {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
+  text-decoration:underline;
 }
 
 #book-quotes h3 {
