@@ -33,7 +33,7 @@ hr {
 }
 
 #logo a {
-  color:white;
+  color:#fbfcf3;
 }
 
 #navigation {
@@ -42,8 +42,25 @@ hr {
 }
 
 .nav-item {
-  width: 120px;
+  width:auto;
+  margin-left:50px;
   color: white;
+  text-align:right;
+  margin-top:10px;
+  padding-bottom:2px;
+  font-size:20px;
+}
+
+.nav-item a {
+  color: #fbfcf3;
+}
+
+div.nav-item:hover {
+  border-bottom:8px solid #fbfcf3;
+}
+
+.nav-active {
+  border-bottom:8px solid #fbfcf3;
 }
 
 #main {
@@ -118,6 +135,11 @@ hr {
   cursor: pointer;
 }
 
+#cover-preview {
+  margin-top:5px;
+  font-size:12px;
+  text-align:center;
+}
 
 #book-summary {
   width:320px;
