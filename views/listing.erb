@@ -1,0 +1,155 @@
+<html>
+<head>
+    <title>bibliotechnical | Programming book reviews and recommendations</title>
+    <meta name="description" content="Find the perfect technical book. Curated programming book
+    reviews, recommendations and reading lists."></meta>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/smoothness/jquery-ui.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/browse.css" type="text/css" media="screen">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <script type="text/javascript" src="javascripts/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery-ui-1.8.9.custom.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('#skill-slider').slider({
+			    range: "min",
+                max: 100,
+                value: 20,
+                disabled: true,
+                });
+            $('#approach-slider').slider({
+			    range: "min",
+			    max: 100,
+                value: 85,
+                disabled: true,
+            });
+            $('#shelf-life-slider').slider({
+			    range: "min",
+			    max: 100,
+                value: 50,
+                disabled: true,
+            });
+            $('#style-slider').slider({
+			    range: "min",
+			    max: 100,
+                value: 30,
+                disabled: true,
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="logo"><a href="/">bibliotechnical</a></div>
+            <div id="navigation">
+                <div class="nav-item"><a href="#">search</a></div>
+                <div class="nav-item nav-active"><a href="#">browse</a></div>
+                <div class="nav-item"><a href="#">lists</a></div>
+            </div>
+        </div>
+        <div id="main">
+            <div id="breadcrumb"></div>
+            <div id="book-header">
+                <div id="book-cover">
+                    <img src="img/learning-python-cover.jpg"/>
+                    <button id="buy">Order a copy</button>
+                    <div id="cover-preview">or check out a <a href="#book-preview">preview</a></div>
+                </div>
+                <div id="book-summary">
+                    <div id="book-title">
+                        <h1><%= @book.title %></h1>
+                        <span><%= @book.author %> - <%= @book.publisher %> - 
+                                <%= @book.edition %> (<%= @book.year %>)</span>
+                        <hr />
+                    </div>
+                    <div id="book-abstract">
+                        <%= @book.abstract %>
+                        <hr />
+                    </div>
+                    <div id="book-extras">
+                        <div id="book-sources">
+                            Also available on:
+                            <br />
+                            <a id="ipad-icon" href="#" title="iPad"></a>
+                            <a id="kindle-icon" href="#" title="Kindle"></a>
+                        </div>
+                        <div id="book-tags">
+                            Tagged:
+                            <br />
+                            <% @book.tags.each do |tag| %>
+                                <div class="tag"><%= tag %></div>
+                            <% end %>
+                        </div>
+                    </div>
+                </div>
+                <div id="book-scores">
+                    <div class="slider-title">Skill Level</div>
+                    <div class="slider" id="skill-slider"></div>
+                    <div class="slider-labels">
+                        <div class="left-label">Beginner</div>
+                        <div class="center-label">Intermediate</div>
+                        <div class="right-label">Expert</div>
+                    </div>
+                    <div class="slider-title">Shelf Life</div>
+                    <div class="slider" id="shelf-life-slider"></div>
+                    <div class="slider-labels">
+                        <div class="left-label">Classic</div>
+                        <div class="center-label">Established</div>
+                        <div class="right-label">New</div>
+                    </div>
+                    <div class="slider-title">Approach</div>
+                    <div class="slider" id="approach-slider"></div>
+                    <div class="slider-labels">
+                        <div class="left-label">Theoretical</div>
+                        <div class="right-label">Practical</div>
+                    </div>
+                    <div class="slider-title">Style</div>
+                    <div class="slider" id="style-slider"></div>
+                    <div class="slider-labels">
+                        <div class="left-label">Reference</div>
+                        <div class="center-label">Examples</div>
+                        <div class="right-label">Articles</div>
+                    </div>
+
+                </div>
+            </div>
+ 
+            <div id="book-content">
+                <hr />
+                <div id="book-quotes">
+                    <h2 class="centered-header">what readers are saying</h2>
+                    <% @book.posts.each do |post| %>
+                        <div class="topic">
+                            <h3><a href="<%= post.source_url %>"><%= post.source_title %></a></h3>
+                            <% post.quotes.each do |quote| %>
+                                <div><%= quote.body %></div>
+                                <div class="user">
+                                    <a href="<%= quote.url %>">posted by <%= quote.user %></a>
+                                </div>
+                            <% end %>
+                        </div>
+                    <% end %>
+                </div>
+                <div id="book-preview">
+                    <hr />
+                    <h2 class="centered-header">take a look inside</h2>
+                    <div id="embedded-preview">
+                        <script type="text/javascript" src="http://books.google.com/books/previewlib.js">
+                        </script>
+                        <script type="text/javascript">
+                            GBS_insertEmbeddedViewer('ISBN:<%= @book.isbn %>',700,780);
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer-contact">
+            Did we get something horribly wrong? Have suggestions? 
+            Drop us a line at <a href="mailto:devs@bibliotechnical.com">devs@bibliotechnical.com</a>
+        </div>
+    </div>
+</body>
+</html>
