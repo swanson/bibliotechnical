@@ -1,3 +1,7 @@
 sinatra
+bson
 bson_ext
 mongo
+mongo_ext
+mongo_mapper
+i18n

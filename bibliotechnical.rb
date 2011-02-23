@@ -4,6 +4,51 @@ require 'uri'
 require 'mongo'
 require 'erb'
 require 'json'
+require 'mongo_mapper'
+
+class Book
+  include MongoMapper::Document
+  key :title, String
+  key :author, String
+  key :publisher, String
+  key :edition, String
+  key :year, String
+  key :isbn, String
+  key :abstract, String
+  key :tags, Array
+  many :posts
+
+  key :slug, String
+
+  key :skill, Integer
+  key :life, Integer
+  key :approach, Integer
+  key :style, Integer
+end
+
+class Post
+  include MongoMapper::EmbeddedDocument
+  key :source_url, String
+  key :source_title, String
+  many :quotes
+
+end
+
+class Quote
+  include MongoMapper::EmbeddedDocument
+  key :body, String
+  key :user, String
+  key :url, String
+
+end
+
+class String
+  def slugify
+    returning self.downcase.gsub(/'/, '').gsub(/[^a-z0-9]+/, '-') do |slug|
+      slug.chop! if slug.last == '-'
+    end
+  end
+end
 
 class Bibliotechnical < Sinatra::Base
   set :static, true
@@ -14,46 +59,35 @@ class Bibliotechnical < Sinatra::Base
     conn = Mongo::Connection.from_uri(ENV['MONGOHQ_URL'])
     db = conn.db(uri.path.gsub(/^\//, ''))
     $collection = db.collection("contacts")
+    MongoMapper.connection = Mongo::Connection.from_uri(ENV['MONGOHQ_URL'])
+    MongoMapper.database = uri.path.gsub(/^\//, '')
   end
     
   get '/' do
     erb :index
   end
 
-  get '/browse' do
-    erb :browse
-  end
-
-  class Book
-    attr_accessor :title, :author, :publisher, :edition, :year, :isbn
-    attr_accessor :abstract, :tags, :posts
-
-    def initialize
-      self.tags = []
-      self.posts = []
+  get '/books/:slug' do
+    @book = Book.where(:slug => params[:slug]).first
+    unless @book.nil? 
+      erb :listing
+    else
+      erb :bt404
     end
   end
-
-  class Post
-    attr_accessor :source_url, :source_title
-    attr_accessor :quotes
-
-    def initialize
-      self.quotes = []
-    end
-  end
-
-  class Quote
-    attr_accessor :body, :user, :url
-  end
-
+ 
   get '/listing' do
     @book = Book.new
     @book.title = "Learning Python"
+    @book.slug = @book.title.slugify
     @book.author = "Mark Lutz"
     @book.publisher = "O'Reilly"
     @book.edition = "Fourth Edition"
     @book.year = 2009
+    @book.skill = 20
+    @book.style = 30
+    @book.approach = 85
+    @book.life = 50
     @book.abstract = "
         Designed to be an in-depth introduction to the core Python language, 
         <i>Learning Python</i> has the feel of a self-paced class on Python
@@ -77,18 +111,15 @@ class Bibliotechnical < Sinatra::Base
                   "http://news.ycombinator.com/item?id=121827",
                   "http://news.ycombinator.com/item?id=121881"]
     quote_bodies.each_with_index do |body, index|
-        q = Quote.new
-        q.body = body
-        q.user = quote_users[index]
-        q.url = quote_urls[index]
+        q = Quote.new(:body => body, 
+                               :user => quote_users[index],
+                               :url  => quote_urls[index])
         hn.quotes << q
     end
     @book.posts << hn
-    @book.posts << hn
-    @book.posts << hn
-    @book.posts << hn
-    @book.posts << hn
 
+    @book.save
+    puts @book.new?
     erb :listing
   end 
 
@@ -106,5 +137,9 @@ class Bibliotechnical < Sinatra::Base
    
     $collection.insert(doc)
       {"success" => true, "type" => contact_type}.to_json
-    end
+  end
+
+  not_found do
+    erb :bt404
+  end
 end

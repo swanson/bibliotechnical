@@ -1,38 +1,37 @@
 <html>
 <head>
     <title>bibliotechnical | Programming book reviews and recommendations</title>
-    <meta name="description" content="Find the perfect technical book. Curated programming book
-    reviews, recommendations and reading lists."></meta>
-    <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
+    <meta name="description" content="Find the perfect technical book. Curated programming book reviews, recommendations and reading lists.">
+    <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen">
     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/smoothness/jquery-ui.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="css/browse.css" type="text/css" media="screen">
-    <link rel="shortcut icon" href="img/favicon.ico" />
-    <script type="text/javascript" src="javascripts/jquery-1.4.4.min.js"></script>
-    <script type="text/javascript" src="javascripts/jquery-ui-1.8.9.custom.min.js"></script>
+    <link rel="stylesheet" href="/css/browse.css" type="text/css" media="screen">
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+    <script type="text/javascript" src="/javascripts/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery-ui-1.8.9.custom.min.js"></script>
     <script type="text/javascript">
         $(function(){
             $('#skill-slider').slider({
 			    range: "min",
                 max: 100,
-                value: 20,
+                value: <%= @book.skill %>,
                 disabled: true,
                 });
             $('#approach-slider').slider({
 			    range: "min",
 			    max: 100,
-                value: 85,
+                value: <%= @book.approach %>,
                 disabled: true,
             });
             $('#shelf-life-slider').slider({
 			    range: "min",
 			    max: 100,
-                value: 50,
+                value:<%= @book.life %>,
                 disabled: true,
             });
             $('#style-slider').slider({
 			    range: "min",
 			    max: 100,
-                value: 30,
+                value: <%= @book.style %>,
                 disabled: true,
             });
         });
@@ -43,17 +42,17 @@
         <div id="header">
             <div id="logo"><a href="/">bibliotechnical</a></div>
             <div id="navigation">
-                <div class="nav-item"><a href="#">search</a></div>
-                <div class="nav-item nav-active"><a href="#">browse</a></div>
-                <div class="nav-item"><a href="#">lists</a></div>
+                <div class="nav-item"><a href="/search">search</a></div>
+                <div class="nav-item nav-active"><a href="/browse">browse</a></div>
+                <div class="nav-item"><a href="/lists">lists</a></div>
             </div>
         </div>
         <div id="main">
             <div id="breadcrumb"></div>
             <div id="book-header">
                 <div id="book-cover">
-                    <img src="img/learning-python-cover.jpg"/>
-                    <button id="buy">Order a copy</button>
+                    <img src="/img/<%= @book.slug %>-cover.png"/>
+                    <a href="/buy"><button id="buy">Order a copy</button></a>
                     <div id="cover-preview">or check out a <a href="#book-preview">preview</a></div>
                 </div>
                 <div id="book-summary">
