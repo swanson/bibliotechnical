@@ -1,11 +1,4 @@
-<html>
-<head>
-    <title>bibliotechnical | Programming book reviews and recommendations</title>
-    <meta name="description" content="Find the perfect technical book. Curated programming book reviews, recommendations and reading lists.">
-    <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/smoothness/jquery-ui.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="/css/browse.css" type="text/css" media="screen">
-    <link rel="shortcut icon" href="/img/favicon.ico" />
+<% content_for :head do %>
     <script type="text/javascript" src="/javascripts/jquery-1.4.4.min.js"></script>
     <script type="text/javascript" src="/javascripts/jquery-ui-1.8.9.custom.min.js"></script>
     <script type="text/javascript">
@@ -25,7 +18,7 @@
             $('#shelf-life-slider').slider({
 			    range: "min",
 			    max: 100,
-                value:<%= @book.life %>,
+                value: <%= @book.life %>,
                 disabled: true,
             });
             $('#style-slider').slider({
@@ -36,18 +29,8 @@
             });
         });
     </script>
-</head>
-<body>
-    <div id="container">
-        <div id="header">
-            <div id="logo"><a href="/">bibliotechnical</a></div>
-            <div id="navigation">
-                <div class="nav-item"><a href="/search">search</a></div>
-                <div class="nav-item nav-active"><a href="/browse">browse</a></div>
-                <div class="nav-item"><a href="/lists">lists</a></div>
-            </div>
-        </div>
-        <div id="main">
+<% end %>
+<% content_for :main do %>
             <div id="breadcrumb"></div>
             <div id="book-header">
                 <div id="book-cover">
@@ -142,13 +125,4 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div id="footer">
-        <div id="footer-contact">
-            Did we get something horribly wrong? Have suggestions? 
-            Drop us a line at <a href="mailto:devs@bibliotechnical.com">devs@bibliotechnical.com</a>
-        </div>
-    </div>
-</body>
-</html>
+<% end %>

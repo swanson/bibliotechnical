@@ -5,3 +5,4 @@ mongo
 mongo_ext
 mongo_mapper
 i18n
+sinatra-content-for

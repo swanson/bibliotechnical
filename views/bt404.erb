@@ -1,35 +1,8 @@
-<html>
-<head>
-    <title>bibliotechnical | Programming book reviews and recommendations</title>
-    <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/smoothness/jquery-ui.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="/css/browse.css" type="text/css" media="screen">
-    <link rel="shortcut icon" href="/img/favicon.ico" />
-</head>
-<body>
-    <div id="container">
-        <div id="header">
-            <div id="logo"><a href="/">bibliotechnical</a></div>
-            <div id="navigation">
-                <div class="nav-item"><a href="/search">search</a></div>
-                <div class="nav-item nav-active"><a href="/browse">browse</a></div>
-                <div class="nav-item"><a href="/lists">lists</a></div>
-            </div>
-        </div>
-        <div id="main">
-            <div style="height:500px; font-size:30px; text-align:center;">
-                <h2 style="margin-top:200px; margin-bottom:20px;">
-                    Sorry! This page doesn't exist or isn't ready yet.</h2>
-                <h3 style="font-size:22px;">Blame the Dewey Decimal System...</h3>
-            </div>
-        </div>
-    </div>
-    <div id="footer">
-        <div id="footer-contact">
-            Did we get something horribly wrong? Have suggestions? 
-            Drop us a line at <a href="mailto:devs@bibliotechnical.com">devs@bibliotechnical.com</a>
-        </div>
-    </div>
-</body>
-</html>
-
+<% content_for :main do %>
+  <div style="height:500px; font-size:30px; text-align:center;">
+    <h2 style="margin-top:200px; margin-bottom:20px;">
+      Sorry! This page doesn't exist or isn't ready yet.
+    </h2>
+    <h3 style="font-size:22px;">Blame the Dewey Decimal System...</h3>
+  </div>
+<% end %>

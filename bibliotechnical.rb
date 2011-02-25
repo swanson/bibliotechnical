@@ -5,6 +5,7 @@ require 'mongo'
 require 'erb'
 require 'json'
 require 'mongo_mapper'
+require 'sinatra/content_for'
 
 class Book
   include MongoMapper::Document
@@ -54,6 +55,8 @@ class Bibliotechnical < Sinatra::Base
   set :static, true
   set :public, 'public'
 
+  helpers Sinatra::ContentFor
+
   configure do
     uri = URI.parse(ENV['MONGOHQ_URL'])
     conn = Mongo::Connection.from_uri(ENV['MONGOHQ_URL'])
@@ -64,7 +67,7 @@ class Bibliotechnical < Sinatra::Base
   end
     
   get '/' do
-    erb :index
+    erb :index, :layout => false
   end
 
   get '/books/:slug' do
@@ -74,6 +77,10 @@ class Bibliotechnical < Sinatra::Base
     else
       erb :bt404
     end
+  end
+
+  get '/add' do
+    erb :new
   end
  
   get '/listing' do
