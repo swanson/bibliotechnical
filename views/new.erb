@@ -1,8 +1,12 @@
 <% content_for :main do %>
-  <div style="height:500px; font-size:30px; text-align:center;">
-    <h2 style="margin-top:200px; margin-bottom:20px;">
-    TEST
-    </h2>
-    <h3 style="font-size:22px;">Blame the Dewey Decimal System...</h3>
-  </div>
+    <div style="height:500px; font-size:30px; text-align:center;">
+        <form>
+            <% @book.attributes.each do |attr| %>
+                <% if attr.respond_to? :embeddable? and attr.embeddable?: %>
+                    <h1>doc</h1>
+                <% end %>
+                <p><label><%= attr %></label><input name="title"></p>
+            <% end %>
+        </form>
+    </div>
 <% end %>

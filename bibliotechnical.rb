@@ -4,44 +4,8 @@ require 'uri'
 require 'mongo'
 require 'erb'
 require 'json'
-require 'mongo_mapper'
 require 'sinatra/content_for'
-
-class Book
-  include MongoMapper::Document
-  key :title, String
-  key :author, String
-  key :publisher, String
-  key :edition, String
-  key :year, String
-  key :isbn, String
-  key :abstract, String
-  key :tags, Array
-  many :posts
-
-  key :slug, String
-
-  key :skill, Integer
-  key :life, Integer
-  key :approach, Integer
-  key :style, Integer
-end
-
-class Post
-  include MongoMapper::EmbeddedDocument
-  key :source_url, String
-  key :source_title, String
-  many :quotes
-
-end
-
-class Quote
-  include MongoMapper::EmbeddedDocument
-  key :body, String
-  key :user, String
-  key :url, String
-
-end
+require 'models/book'
 
 class String
   def slugify
@@ -79,8 +43,9 @@ class Bibliotechnical < Sinatra::Base
     end
   end
 
-  get '/add' do
-    erb :new
+  get '/view/:slug' do
+    content_type :json
+    @book = Book.where(:slug => params[:slug]).first.to_json
   end
  
   get '/listing' do
