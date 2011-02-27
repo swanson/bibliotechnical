@@ -76,9 +76,9 @@
                     <div class="slider-title">Shelf Life</div>
                     <div class="slider" id="shelf-life-slider"></div>
                     <div class="slider-labels">
-                        <div class="left-label">Classic</div>
+                        <div class="left-label">New</div>
                         <div class="center-label">Established</div>
-                        <div class="right-label">New</div>
+                        <div class="right-label">Classic</div>
                     </div>
                     <div class="slider-title">Approach</div>
                     <div class="slider" id="approach-slider"></div>
@@ -116,11 +116,26 @@
                 <div id="book-preview">
                     <hr />
                     <h2 class="centered-header">take a look inside</h2>
-                    <div id="embedded-preview">
+                    <div id="embedded-preview" style="width:700px;height:780px;">
                         <script type="text/javascript" src="http://books.google.com/books/previewlib.js">
                         </script>
+                        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
                         <script type="text/javascript">
-                            GBS_insertEmbeddedViewer('ISBN:<%= @book.isbn %>',700,780);
+                            google.load("books", "0");
+                            //GBS_insertEmbeddedViewer('ISBN:<%= @book.isbn %>',700,780);
+                            function initialize() {
+                            var viewer = new google.books.DefaultViewer(document.getElementById('embedded-preview'));
+                            viewer.load('ISBN:<%= @book.isbn %>', function(){                            
+                                    //if ($('#embedded-preview > iframe').length < 1){                                    
+                                    <% if @book["alt_preview"].present? %>
+                                        $('#embedded-preview').html('<iframe width="100%" height="100%" src="<%= @book.alt_preview %>"></iframe>');
+                                    <% else %>
+                                        $('#embedded-preview').text("Sorry, we don't have a preview for this book yet.");
+                                    <% end %>
+                                //}
+                                    });                        
+                            }
+                            google.setOnLoadCallback(initialize);
                         </script>
                     </div>
                 </div>

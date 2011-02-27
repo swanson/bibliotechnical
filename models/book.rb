@@ -18,6 +18,8 @@ class Book
   key :life, Integer
   key :approach, Integer
   key :style, Integer
+
+  key :alt_preview, String
 end
 
 class Post
