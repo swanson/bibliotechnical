@@ -15,79 +15,69 @@
 	"life":15,
 	"skill":10,
 	"approach":95,
-    "alt_preview":"<object id=\"doc_495320395134278\" name=\"doc_495320395134278\" height=\"100%\" width=\"100%\" type=\"application/x-shockwave-flash\" data=\"http://d1.scribdassets.com/ScribdViewer.swf\" style=\"outline:none;\" ><param name=\"movie\" value=\"http://d1.scribdassets.com/ScribdViewer.swf\"><param name=\"wmode\" value=\"opaque\"><param name=\"bgcolor\" value=\"#ffffff\"><param name=\"allowFullScreen\" value=\"true\"><param name=\"allowScriptAccess\" value=\"always\"><param name=\"FlashVars\" value=\"document_id=32294624&access_key=key-t47jfonw7ehtsg1tm5d&page=1&viewMode=list\"><embed id=\"doc_495320395134278\" name=\"doc_495320395134278\" src=\"http://d1.scribdassets.com/ScribdViewer.swf?document_id=32294624&access_key=key-t47jfonw7ehtsg1tm5d&page=1&viewMode=list\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" height=\"600\" width=\"450\" wmode=\"opaque\" bgcolor=\"#ffffff\"></embed></object",
+    "alt_preview":"<object id=\"doc_495320395134278\" name=\"doc_495320395134278\" height=\"100%\" width=\"100%\" type=\"application/x-shockwave-flash\" data=\"http://d1.scribdassets.com/ScribdViewer.swf\" style=\"outline:none;\" ><param name=\"movie\" value=\"http://d1.scribdassets.com/ScribdViewer.swf\"><param name=\"wmode\" value=\"opaque\"><param name=\"bgcolor\" value=\"#ffffff\"><param name=\"allowFullScreen\" value=\"true\"><param name=\"allowScriptAccess\" value=\"always\"><param name=\"FlashVars\" value=\"document_id=32294624&access_key=key-t47jfonw7ehtsg1tm5d&page=1&viewMode=list\"><embed id=\"doc_495320395134278\" name=\"doc_495320395134278\" src=\"http://d1.scribdassets.com/ScribdViewer.swf?document_id=32294624&access_key=key-t47jfonw7ehtsg1tm5d&page=1&viewMode=list\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" height=\"100%\" width=\"100%\" wmode=\"opaque\" bgcolor=\"#ffffff\"></embed></object",
 	"posts":[
 		{
-			"source_title":"Looking for a good book on learning Python. Any recommendations?",
-			"source_url":"http://www.reddit.com/r/Python/comments/fdmzz/looking_for_a_good_book_on_learning_python/",
+			"source_title":"Learn Python The Hard Way: free book",
+			"source_url":"http://www.reddit.com/r/programming/comments/e11pz/learn_python_the_hard_way_free_book/",
 			"quotes":[
 				{
-					"body":"Dive Into Python is very good at showing off the features of Python, but in many cases the examples it gives utilise the features of python in pretty bizarre and inappropriate ways, for the sake of showing off what the language is capable of. In other words, the code in DIP is not very pythonic. For that reason, the book is probably better for established programmers who just want a quick primer of the language.",
-					"url":"http://www.reddit.com/r/Python/comments/fdmzz/looking_for_a_good_book_on_learning_python/c1f5zdi",
-					"user":"Herald_MJ"
+					"body":" I took an entry level Java class in college a few years ago and it was sort of a nightmare for me. I honestly feel like I've learned more in the past 5 hours then I did in the first month taking that class.",
+					"url":"http://www.reddit.com/r/programming/comments/e11pz/learn_python_the_hard_way_free_book/c14iz98",
+					"user":"ozzman54"
 				},
 				{
-					"body":"Dive into Python is amazing.",
-					"url":"http://www.reddit.com/r/Python/comments/fdmzz/looking_for_a_good_book_on_learning_python/c1f5n1f",
-					"user":"suyogrulz"
+					"body":"It's an interesting approach and it reminds me of the old days of learning programming from books where there wasn't anywhere to copy and paste from. I'd say its strong points are getting people comfortable with the \"environment\" in which programming takes place, what you're actually doing when you run a program, etc.",
+					"url":"http://www.reddit.com/r/programming/comments/e11pz/learn_python_the_hard_way_free_book/c14gaud",
+					"user":"columbine"
 				}
 			]
 		},
-		{
-			"source_title":"Dive into Python 3",
-			"source_url":"http://www.reddit.com/r/Python/comments/7sj39/dive_into_python_3/",
+        {
+			"source_title":"What is the best book for learning Python as a beginner?",
+			"source_url":"http://www.quora.com/What-is-the-best-book-for-learning-Python-as-a-beginner",
 			"quotes":[
 				{
-					"body":"I loved the first Dive into Python book. I thought it was fantastic. I tend to learn by example, and no book was a better aid to learn by example than Dive into Python. It is absolutely fantastic.",
-					"url":"http://www.reddit.com/r/Python/comments/7sj39/dive_into_python_3/c07b8xd",
-					"user":"danhs"
+					"body":"Learn Python the Hard Way by Zed Shaw looks very nice, specially for complete beginners. It tries to mimic the way a lot of people actually learned programming, that is tediously typing in programs seen somewhere else and slightly editing them so that they do what they want to achieve.<br/><br/>What I really like about this book is that it avoids the situation when the reader sort of grasps the topic of the chapter in an abstract manner, but still isn't sure how to make it work on the computer (I remember things like this being really frustrating).",
+					"url":"http://www.quora.com/What-is-the-best-book-for-learning-Python-as-a-beginner/answer/Ryszard-Szopa",
+					"user":"Ryszard Szopa"
 				},
 				{
-					"body":"I cut my Python teeth on DiP and am looking forward to this with great interest.",
-					"url":"http://www.reddit.com/r/Python/comments/7sj39/dive_into_python_3/c07aedl",
-					"user":"laughingboy0"
+					"body":"As a python noob - I totally agree with LPTH and would give the following advice, READ it first, TWICE.",
+					"url":"http://www.quora.com/What-is-the-best-book-for-learning-Python-as-a-beginner/all_comments/Ryszard-Szopa",
+					"user":"Sam Stave"
 				}
 			]
 		},
 		{
-			"source_title":"Dive into python must die",
-			"source_url":"http://news.ycombinator.com/item?id=1289186",
+			"source_title":"Ask HN: Structured approach to learning Python/Django",
+			"source_url":"http://news.ycombinator.com/item?id=2099584",
 			"quotes":[
 				{
-					"body":"I'd programmed in 5 languages by the time I read dive into python and learned enough python to write a decompiler in it (decompiling something else, not python). Even at that time, it was shooting right at me, and not at \"person learning to code\".<br/>It is, and always has, been \"Hey guy who knows how to code, here is how you code in x\"",
-					"url":"http://news.ycombinator.com/item?id=1289633",
-					"user":"gte910h"
+					"body":"I've started with Learning Python the Hardway and I'm currently going through Head First Python.",
+					"url":"http://news.ycombinator.com/item?id=2099584",
+					"user":"naithemilkman"
 				},
 				{
-					"body":"The entire premise of Dive Into Python is to throw a bunch of idiomatic Python code at you and explain what it does. It's explicit in the text and implied by the title.<br/>Personally, I found this refreshing.",
-					"url":"http://news.ycombinator.com/item?id=1289645",
-					"user":"scott_s"
+					"body":"Just launched my first webapp, built to teach myself Python and Django ... I did Learn Python the Hard Way to start",
+					"url":"http://news.ycombinator.com/item?id=2102861",
+					"user":"limedaring"
 				}
 			]
 		},
 		{
-			"source_title":"What is the best Python book for experienced programmers?",
-			"source_url":"http://stackoverflow.com/questions/457757/what-is-the-best-python-book-for-experienced-programmers",
+			"source_title":"Zed Shaw completes mongrel2 manual",
+			"source_url":"http://news.ycombinator.com/item?id=1560721",
 			"quotes":[
 				{
-					"body":"[Dive into Python] is a bit dated but still useful.",
-					"url":"http://stackoverflow.com/questions/457757/what-is-the-best-python-book-for-experienced-programmers/457760#457760",
-					"user":"Steve Losh"
-				}
-			]
-		},
-		{
-			"source_title":"What's the best text to learn Python?",
-			"source_url":"http://www.quora.com/Whats-the-best-text-to-learn-Python",
-			"quotes":[
-				{
-					"body":"If you've programmed in another language, Dive Into Python is a good way to learn Python while avoiding re-learning the basics.",
-					"url":"http://www.quora.com/Whats-the-best-text-to-learn-Python/answer/Paul-Butler",
-					"user":"Paul Butler"
+					"body":"I've also taught Comp Sci 101/102 as a grad school TA. I have to say that [Learn Python The Hard Way] is markedly better than all the other attempts at a tutorial for the complete programming newb I've seen.",
+					"url":"http://news.ycombinator.com/item?id=1561484",
+					"user":"stcredzero"
 				}
 			]
 		}
 	]
 }
+
 
 

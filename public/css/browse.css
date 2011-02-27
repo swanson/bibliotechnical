@@ -299,6 +299,10 @@ hr {
   line-height:1.1;
 }
 
+.topic h3 {
+  text-align:left;
+}
+
 .user a {
   font-size: 13px;
   font-style: italic;
