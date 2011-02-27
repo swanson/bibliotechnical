@@ -1,21 +1,21 @@
 {
-	"slug":"dive-into-python",
-	"title":"Dive Into Python",
-	"isbn":"1590593561",
-	"author":"Mark Pilgrim",
-	"publisher":"Apress",
+	"slug":"learn-python-the-hard-way",
+	"title":"Learn Python The Hard Way",
+	"isbn":"978-0-557-79819-3",
+	"author":"Zed Shaw",
+	"publisher":"Lulu.com",
 	"edition":"First Edition",
-	"year":"2004",
-	"abstract":"<i>Dive Into Python</i> is a Python book for experienced programmers. It's the perfect resource if you like to jump into languages fast and get going right away.",
+	"year":"2010",
+	"abstract":"<i>Learn Python The Hard Way</i> is a beginner book for people who want to learn to code. If you can already code then the book will probably drive you insane.<br/><br/> It's intended for people who have no coding chops to build up their skills before starting a more detailed book.",
 	"tags":[
 		"python",
 		"learning"
 	],
-	"style":50,
-	"life":75,
-	"skill":50,
+	"style":65,
+	"life":15,
+	"skill":10,
 	"approach":95,
-    "alt_preview":"<iframe width=\"100%\" height=\"100%\" src=\"http://diveintopython.org/toc/index.html\"></iframe>",
+    "alt_preview":"<object id=\"doc_495320395134278\" name=\"doc_495320395134278\" height=\"100%\" width=\"100%\" type=\"application/x-shockwave-flash\" data=\"http://d1.scribdassets.com/ScribdViewer.swf\" style=\"outline:none;\" ><param name=\"movie\" value=\"http://d1.scribdassets.com/ScribdViewer.swf\"><param name=\"wmode\" value=\"opaque\"><param name=\"bgcolor\" value=\"#ffffff\"><param name=\"allowFullScreen\" value=\"true\"><param name=\"allowScriptAccess\" value=\"always\"><param name=\"FlashVars\" value=\"document_id=32294624&access_key=key-t47jfonw7ehtsg1tm5d&page=1&viewMode=list\"><embed id=\"doc_495320395134278\" name=\"doc_495320395134278\" src=\"http://d1.scribdassets.com/ScribdViewer.swf?document_id=32294624&access_key=key-t47jfonw7ehtsg1tm5d&page=1&viewMode=list\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" height=\"600\" width=\"450\" wmode=\"opaque\" bgcolor=\"#ffffff\"></embed></object",
 	"posts":[
 		{
 			"source_title":"Looking for a good book on learning Python. Any recommendations?",
@@ -89,4 +89,5 @@
 		}
 	]
 }
+
 

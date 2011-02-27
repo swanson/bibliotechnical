@@ -122,18 +122,15 @@
                         <script type="text/javascript" src="https://www.google.com/jsapi"></script>
                         <script type="text/javascript">
                             google.load("books", "0");
-                            //GBS_insertEmbeddedViewer('ISBN:<%= @book.isbn %>',700,780);
                             function initialize() {
-                            var viewer = new google.books.DefaultViewer(document.getElementById('embedded-preview'));
-                            viewer.load('ISBN:<%= @book.isbn %>', function(){                            
-                                    //if ($('#embedded-preview > iframe').length < 1){                                    
-                                    <% if @book["alt_preview"].present? %>
-                                        $('#embedded-preview').html('<iframe width="100%" height="100%" src="<%= @book.alt_preview %>"></iframe>');
-                                    <% else %>
-                                        $('#embedded-preview').text("Sorry, we don't have a preview for this book yet.");
-                                    <% end %>
-                                //}
-                                    });                        
+                              var viewer = new google.books.DefaultViewer(document.getElementById('embedded-preview'));
+                              viewer.load('ISBN:<%= @book.isbn %>', function(){                            
+                                <% if @book["alt_preview"].present? %>
+                                  $('#embedded-preview').html('<%= @book.alt_preview %>');
+                                <% else %>
+                                  $('#embedded-preview').text("Sorry, we don't have a preview for this book yet.");
+                                <% end %>
+                              });                        
                             }
                             google.setOnLoadCallback(initialize);
                         </script>
