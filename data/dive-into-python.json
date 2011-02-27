@@ -1,0 +1,68 @@
+{
+	"slug":"dive-into-python",
+	"title":"Dive Into Python",
+	"isbn":"0596158068",
+	"author":"Mark Lutz",
+	"publisher":"O'Reilly",
+	"edition":"Fourth Edition",
+	"year":"2009",
+	"abstract":"Designed to be an in-depth introduction to the core Python language, <i>Learning Python</i> has the feel of a self-paced class on Python fundamentals.<br/><br/> With material for both Python 2.X and 3.X, this book is a perfect introduction to the language.",
+	"tags":[
+		"python",
+		"learning"
+	],
+	"style":30,
+	"life":50,
+	"skill":20,
+	"approach":85,
+	"posts":[
+		{
+			"source_title":"Ask YC: What is the best Python book for a beginner?",
+			"source_url":"http://news.ycombinator.com/item?id=121779",
+			"quotes":[
+				{
+					"body":"Learning Python is an excellent book. It is what I found most useful for learning the language. I bought and read many books, and this one is the best I found.",
+					"url":"http://news.ycombinator.com/item?id=121994",
+					"user":"mathogre"
+				},
+				{
+					"body":"I started learning Python from a Mark Lutz seminar actually. He is a great teacher.",
+					"url":"http://news.ycombinator.com/item?id=121827",
+					"user":"ivankirigin"
+				},
+				{
+					"body":"If you really want a beginner book, Learning Python is a great choice.",
+					"url":"http://news.ycombinator.com/item?id=121881",
+					"user":"fireandfury"
+				}
+			]
+		},
+		{
+			"source_title":"Looking for a good book on learning Python. Any recommendations?",
+			"source_url":"http://www.reddit.com/r/Python/comments/fdmzz/looking_for_a_good_book_on_learning_python/",
+			"quotes":[
+				{
+					"body":"Lutz's book is very good, it would be my first pick.",
+					"url":"http://www.reddit.com/r/Python/comments/fdmzz/looking_for_a_good_book_on_learning_python/c1f8h5y",
+					"user":"EverybodyScram"
+				},
+				{
+					"body":"I agree that [Learning Python] is a good book. It was my first Python book, too. But as others have already said, it has a lot of text and chapters. That doesn't seem to be a bad thing, especially for a beginner book. If you don't mind reading a lot of text and getting things presented step by step, go for it.",
+					"url":"http://www.reddit.com/r/Python/comments/fdmzz/looking_for_a_good_book_on_learning_python/c1fbu8s",
+					"user":"Knack_123"
+				}
+			]
+		},
+		{
+			"source_title":"What is the best Python book for experienced programmers?",
+			"source_url":"http://stackoverflow.com/questions/457757/what-is-the-best-python-book-for-experienced-programmers",
+			"quotes":[
+				{
+					"body":"Unexpectedly, I found myself more frequently using Learning Python, even though it seems much more like it's \"aimed at the novice programmer\"; something I was not, really. I just noticed I found the basic syntax stuff and examples I needed faster in that book.",
+					"url":"http://stackoverflow.com/questions/457757/what-is-the-best-python-book-for-experienced-programmers/459714#459714",
+					"user":"Jonik"
+				}
+			]
+		}
+	]
+}
