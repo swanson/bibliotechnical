@@ -7,11 +7,13 @@
         <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen">
         <script type="text/javascript">
             $(document).ready(function(){
+              var placeHolderText = 'Use email@domain.com or @handle please';
+
               $("#sign_up").click(function(e){
                 var that = $(this);
                 e.preventDefault();
 
-                if ( $('.entry').val().length < 1 ){
+                if ( $('.entry').val().length < 1 || $('.entry').val() == placeHolderText ){
                   $('#form_div').effect('shake', { times: 4, distance: 3}, 40);
                   return;
                 }
@@ -40,6 +42,26 @@
                   },
                 });
               });
+
+              var i = document.createElement("input");
+              if ('placeholder' in i) {
+                return;
+              }
+              var subscribeInput = $("#subscribe > input");
+              subscribeInput.val(placeHolderText);
+
+              subscribeInput.focus(function(){
+                if ($(this).val() == placeHolderText) {
+                  $(this).val('');
+                }
+              });
+              subscribeInput.blur(function(){
+                if ($(this).val() == '') {
+                  $(this).val(placeHolderText);
+                }
+              });
+
+
             });
         </script>
 
@@ -72,19 +94,46 @@
             <h1>bibliotechnical</h1>
             <div class="box">
                 <h2>Find the perfect technical book.</h2>
-                <h4>
-                    Picking your next book is hard. Most sites are the same:<br />
-                    Endless pages of book results.<br />
-                    &#9733;&#9733;&#9733;&#9733; ratings that don't mean anything.<br />
-                    Lack of human curation.<br />
-                    <br />
-                    You don't care which book has sold the most copies, <br/> just 
-                    which book will be the best resource for YOU.
+                <p>
+                    Picking your next book is <b>hard</b>. With most sites, it's the same story...<br />
+                </p>
+                <ul>
+                    <li>Endless pages of book results</li>
+                    <li>&#9733;&#9733;&#9733;&#9733; ratings that don't mean anything</li>
+                    <li>Lack of human curation</li>
+                </ul>
+                <p>
+                    You don't care which book has sold the most copies, just 
+                    which one will be the best resource for YOU.
                     <br />                  
-                </h4>
-                <h3>Enter your email or Twitter and we'll send you updates.</h3>
+                </p>
+
+                <p style="text-align:justify;">
+                    Take a look at some sample pages below and see how much better
+                    finding a book can be with <b>bibliotechnical</b>.
+                </p>
+                <div id="sample-pages">
+                    <div class="sample-book">
+                        <a href="/books/learning-python">
+                            <img width="75%" src="/img/learning-python-cover.png" border="0">
+                        </a>
+                    </div>
+                    <div class="sample-book">
+                        <a href="/books/learn-python-the-hard-way">
+                            <img width="75%" src="/img/learn-python-the-hard-way-cover.png" border="0">
+                        </a>
+                    </div>
+                    <div class="sample-book">
+                        <a href="/books/dive-into-python">
+                            <img width="75%" src="/img/dive-into-python-cover.png" border="0">
+                        </a>
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+                <h3>Like what you see? Enter your email or Twitter and we'll send you updates.</h3>
             <div id="form_div">
-            <form id="subscribe" novalidate>
+                <form id="subscribe" novalidate
+                    placeholder="your-email@your-domain.com or @your-twitter-handler">
                 <input class="entry" type="email" name="contact" />
                 <button id="sign_up">Sign up</button>
             </form>
