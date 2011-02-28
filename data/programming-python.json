@@ -1,0 +1,73 @@
+{
+	"slug":"programming-python",
+	"title":"Programming Python",
+	"isbn":"0596158106",
+	"author":"Mark Lutz",
+	"publisher":"O'Reilly",
+	"edition":"Fourth Edition",
+	"year":"2010",
+	"abstract":"<i>Programming Python</i> is about what you can do with Python after you've learned the core language. It focuses on the libraries, tools, and techniques used in realistic applications development work. <br/><br/>The book provides gradual tutorials and develops non-trivial Python programs in a variey of common domains.",
+	"tags":[
+		"python",
+		"learning"
+	],
+	"style":65,
+	"life":55,
+	"skill":40,
+	"approach":85,
+    "related":[
+        {
+            "slug":"dive-into-python",
+            "reason":"similar to"
+        },
+        {
+            "slug":"learn-python-the-hard-way",
+            "reason":"better for beginners"
+        },
+        {
+            "slug":"learning-python",
+            "reason":"better for beginners"
+        }
+	],
+	"posts":[
+        {
+			"source_title":"Programming Python 4th Edition released",
+			"source_url":"http://www.reddit.com/r/Python/comments/f0qdf/programming_python_4th_edition_released/",
+			"quotes":[
+				{
+					"body":"I have a library of python books but if my house was on fire I'd grab and Programming in Python 3, 2nd ed., Mark Mark Summerfield and Python Essential Reference, 4th ed., David Beazley. Both books cover more ground, and more effectively than any others I've read, and I've read numerous, including Lulz's most recent. While Mark's books are good, and the Python community has greatly benefited from his works, they're not the first books I reach for.",
+					"url":"http://www.reddit.com/r/Python/comments/f0qdf/programming_python_4th_edition_released/c1ckp96",
+					"user":"CADDiQ"
+				}
+			]
+		},
+		{
+			"source_title":"Is there a definitive book on Python?",
+			"source_url":"http://stackoverflow.com/questions/175001/is-there-a-definitive-book-on-python",
+			"quotes":[
+				{
+					"body":"Mark Lutz's Programming Python.",
+					"url":"http://stackoverflow.com/questions/175001/is-there-a-definitive-book-on-python/175009#175009",
+					"user":"Joe Skora"
+				},
+				{
+					"body":"Programming Python: A good tutorial that walks through a lot of the libraries and gives plenty of motivating examples. I think this is a great book to start on the language.",
+					"url":"http://stackoverflow.com/questions/175001/is-there-a-definitive-book-on-python/175059#175059",
+					"user":"John Mulder"
+				}
+			]
+		},
+		{
+			"source_title":"Advanced python book.",
+			"source_url":"http://www.reddit.com/r/Python/comments/f07a1/advanced_python_book/",
+			"quotes":[
+				{
+					"body":"[Programming Python] Mark Lutz is a fantastic author.",
+					"url":"http://www.reddit.com/r/Python/comments/f07a1/advanced_python_book/c1cau5h",
+					"user":"IP0"
+				}
+			]
+		}
+	]
+}
+
