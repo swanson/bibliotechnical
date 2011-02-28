@@ -34,7 +34,7 @@
             <div id="breadcrumb"></div>
             <div id="book-header">
                 <div id="book-cover">
-                    <img src="/img/<%= @book.slug %>-cover.png"/>
+                    <img src="/img/<%= @book.slug %>-cover.png">
                     <a href="/buy"><button id="buy">Order a copy</button></a>
                     <div id="cover-preview">or check out a <a href="#book-preview">preview</a></div>
                 </div>
@@ -145,7 +145,7 @@
                     <div class="related-book">
                         <a href="/books/<%= related.slug %>">
                         <%= related.reason %><br/><br/>
-                        <img width="75%" src="/img/<%= related.slug %>-cover.png" />
+                        <img width="75%" src="/img/<%= related.slug %>-cover.png" border="0">
                         </a>
                     </div>
                 <% end %>
