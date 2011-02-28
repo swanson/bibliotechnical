@@ -137,4 +137,18 @@
                     </div>
                 </div>
             </div>
+            <div id="related-books">
+                <hr />
+                <div id="related-list">
+                     <h2 class="centered-header">related books</h2>
+                <% @book.related.each do |related|%>
+                    <div class="related-book">
+                        <a href="/books/<%= related.slug %>">
+                        <%= related.reason %><br/><br/>
+                        <img width="75%" src="/img/<%= related.slug %>-cover.png" />
+                        </a>
+                    </div>
+                <% end %>
+                </div>
+            </div>
 <% end %>

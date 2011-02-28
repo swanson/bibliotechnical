@@ -10,7 +10,8 @@ class Book
   key :isbn, String
   key :abstract, String
   key :tags, Array
-  many :posts
+  many :posts, :class_name => 'Post'
+  many :related, :class_name => 'RelatedBook'
 
   key :slug, String
 
@@ -26,8 +27,7 @@ class Post
   include MongoMapper::EmbeddedDocument
   key :source_url, String
   key :source_title, String
-  many :quotes
-
+  many :quotes, :class_name => 'Quote'
 end
 
 class Quote
@@ -35,6 +35,11 @@ class Quote
   key :body, String
   key :user, String
   key :url, String
+end
 
+class RelatedBook
+  include MongoMapper::EmbeddedDocument
+  key :slug, String
+  key :reason, String
 end
 

@@ -16,6 +16,20 @@
 	"skill":50,
 	"approach":95,
     "alt_preview":"<iframe width=\"100%\" height=\"100%\" src=\"http://diveintopython.org/toc/index.html\"></iframe>",
+    "related":[
+        {
+            "slug":"learn-python-the-hard-way",
+            "reason":"better for beginners"
+        },
+        {
+            "slug":"programming-python",
+            "reason":"similar to"
+        },
+        {
+            "slug":"learning-python",
+            "reason":"better reference book"
+        }
+    ],
 	"posts":[
 		{
 			"source_title":"Looking for a good book on learning Python. Any recommendations?",

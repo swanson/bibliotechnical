@@ -15,6 +15,20 @@
 	"life":50,
 	"skill":20,
 	"approach":85,
+    "related":[
+        {
+            "slug":"dive-into-python",
+            "reason":"better for experienced readers"
+        },
+        {
+            "slug":"learn-python-the-hard-way",
+            "reason":"more hands-on"
+        },
+        {
+            "slug":"programming-python",
+            "reason":"better for experienced readers"
+        }
+    ],
 	"posts":[
 		{
 			"source_title":"Ask YC: What is the best Python book for a beginner?",

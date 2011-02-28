@@ -264,9 +264,9 @@ hr {
 }
 
 .right-label {
-    width:33%;
-    float:right;
-    text-align:right;
+  width:33%;
+  float:right;
+  text-align:right;
 }
 
 #book-content {
@@ -311,7 +311,7 @@ hr {
   margin-top:-5px;
 }
 
-#book-quotes h2, #book-preview h2 {
+#book-quotes h2, #book-preview h2, #related-books h2 {
   color:#2b2f3d;
   font-size:22px;
   font-style:italic;
@@ -332,11 +332,28 @@ hr {
 
 #embedded-preview {
   width:700px;
-  margin: 20 110;
+  margin: 20px 110px;
 }
 
 #embedded-preview table {
   display:none;
+}
+
+#related-books {
+}
+
+#related-list {
+  width: 660px;
+  float:none;
+  margin: 0px auto;
+}
+
+.related-book {
+  margin: 20px 10px;
+  width: 200px;
+  font-size:14px;
+  text-align:center;
+  padding-bottom:10px;
 }
 
 #footer {
@@ -355,3 +372,4 @@ hr {
   color:#fbfcf3;
   text-decoration:underline;
 }
+
