@@ -104,10 +104,14 @@ div.nav-item:hover {
 #buy {
   background: -moz-linear-gradient(0% 100% 90deg,#63A62F, #7FBF4D);
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7FBF4D), to(#63A62F));
+  border-bottom-color: #5B992B;
   -moz-border-radius: 3px;
   border-radius: 3px;
   border-width: 1px;
   border-style: solid;
+  border-left-color: #63A62F;
+  border-right-color: #63A62F;
+  border-top-color: #63A62F;
   display: block;
   float: left;
   color: white;
