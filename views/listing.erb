@@ -35,8 +35,8 @@
             <div id="book-header">
                 <div id="book-cover">
                     <img src="/img/<%= @book.slug %>-cover.png">
-                    <a href="/buy"><button id="buy">Order a copy</button></a>
-                    <div id="cover-preview">or check out a <a href="#book-preview">preview</a></div>
+                    <a href="<%= @book.amazon_link %>"><button id="buy">Order a copy</button></a>
+                    <div id="cover-preview">or <a href="#book-preview">check out a preview</a></div>
                 </div>
                 <div id="book-summary">
                     <div id="book-title">
@@ -53,8 +53,8 @@
                         <div id="book-sources">
                             Also available on:
                             <br />
-                            <a id="ipad-icon" href="#" title="iPad"></a>
-                            <a id="kindle-icon" href="#" title="Kindle"></a>
+                            <!--<a id="ipad-icon" href="#" title="iPad"></a>-->
+                            <a id="kindle-icon" href="<%= @book.kindle_link %>" title="Kindle"></a>
                         </div>
                         <div id="book-tags">
                             Tagged:

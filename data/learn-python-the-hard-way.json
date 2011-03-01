@@ -16,6 +16,8 @@
 	"skill":10,
 	"approach":95,
     "alt_preview":"<object id=\"doc_495320395134278\" name=\"doc_495320395134278\" height=\"100%\" width=\"100%\" type=\"application/x-shockwave-flash\" data=\"http://d1.scribdassets.com/ScribdViewer.swf\" style=\"outline:none;\" ><param name=\"movie\" value=\"http://d1.scribdassets.com/ScribdViewer.swf\"><param name=\"wmode\" value=\"opaque\"><param name=\"bgcolor\" value=\"#ffffff\"><param name=\"allowFullScreen\" value=\"true\"><param name=\"allowScriptAccess\" value=\"always\"><param name=\"FlashVars\" value=\"document_id=32294624&access_key=key-t47jfonw7ehtsg1tm5d&page=1&viewMode=list\"><embed id=\"doc_495320395134278\" name=\"doc_495320395134278\" src=\"http://d1.scribdassets.com/ScribdViewer.swf?document_id=32294624&access_key=key-t47jfonw7ehtsg1tm5d&page=1&viewMode=list\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" height=\"100%\" width=\"100%\" wmode=\"opaque\" bgcolor=\"#ffffff\"></embed></object",
+    "amazon_link":"http://www.lulu.com/product/paperback/learn-python-the-hard-way/13509215",
+    "kindle_link":"http://www.lulu.com/product/file-download/learn-python-the-hard-way/13509216",
     "related":[
         {
             "slug":"dive-into-python",

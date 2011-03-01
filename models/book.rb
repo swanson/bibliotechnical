@@ -21,6 +21,10 @@ class Book
   key :style, Integer
 
   key :alt_preview, String
+
+  key :amazon_link, String
+  key :kindle_link, String
+  key :ipad_link, String
 end
 
 class Post

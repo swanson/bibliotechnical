@@ -16,6 +16,8 @@
 	"skill":50,
 	"approach":95,
     "alt_preview":"<iframe width=\"100%\" height=\"100%\" src=\"http://diveintopython.org/toc/index.html\"></iframe>",
+    "amazon_link":"http://www.amazon.com/gp/product/1590593561?&tag=bibliotechnic-20",
+    "kindle_link":"http://www.amazon.com/gp/product/B001GIOFN8?&tag=bibliotechnic-20",
     "related":[
         {
             "slug":"learn-python-the-hard-way",

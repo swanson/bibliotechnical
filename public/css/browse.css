@@ -16,11 +16,11 @@ i {
 }
 
 a {
-  color:#2b2f3d;
+  color:#82705d;
 }
 
 a:visited {
-  color:#707895;
+  color:#82705d;
 }
 
 hr {
@@ -104,23 +104,10 @@ div.nav-item:hover {
 #buy {
   background: -moz-linear-gradient(0% 100% 90deg,#63A62F, #7FBF4D);
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7FBF4D), to(#63A62F));
-  border-bottom-color: #5B992B;
   -moz-border-radius: 3px;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-left-color: #63A62F;
-  border-left-style: solid;
-  border-left-width: 1px;
-  border-right-color: #63A62F;
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-top-color: #63A62F;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  border-top-style: solid;
-  border-top-width: 1px;
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
   display: block;
   float: left;
   color: white;
@@ -152,6 +139,10 @@ div.nav-item:hover {
   font-size:12px;
   text-align:center;
 }
+
+#cover-preview a {
+  text-decoration:underline;
+}    
 
 #book-summary {
   width:320px;
@@ -297,6 +288,7 @@ hr {
   padding-right: 30px;
   text-align:justify;
   line-height:1.1;
+  overflow:hidden;
 }
 
 .topic h3 {
